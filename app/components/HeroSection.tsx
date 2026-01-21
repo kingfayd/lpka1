@@ -100,9 +100,9 @@ export default function HeroSection() {
               />
 
               <img
-                src="/images/lpka2.jpg"
+                src="/images/lpka3.png"
                 alt="Logo LPKA"
-                className="w-20 md:w-24 lg:w-28 h-auto"
+                className="w-12 md:w-24 lg:w-28 h-auto"
               />
             </div>
 

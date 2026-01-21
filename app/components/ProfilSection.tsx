@@ -9,10 +9,7 @@ export default function ProfilSection() {
   
           {/* DESKRIPSI */}
           <p className="text-gray-600 leading-relaxed mb-10">
-            Lembaga Pembinaan Khusus Anak (LPKA) merupakan Unit Pelaksana Teknis
-            Pemasyarakatan yang melaksanakan pembinaan terhadap Anak Binaan
-            berdasarkan sistem peradilan pidana anak, dengan mengedepankan
-            pendidikan, pembinaan kepribadian, serta pengembangan keterampilan.
+          Lembaga Pembinaan Khusus Anak (LPKA) Kelas I Tangerang merupakan institusi yang bertugas menyelenggarakan pembinaan, pendidikan, serta pembimbingan bagi Anak Didik Pemasyarakatan (Andikpas) sebagai upaya mempersiapkan mereka agar mampu berkembang secara optimal dan siap kembali ke masyarakat. Proses pembinaan tersebut tidak hanya berfokus pada aspek akademik dan keterampilan, tetapi juga mencakup pembinaan mental, spiritual, dan sosial guna membentuk karakter yang berakhlak mulia.
           </p>
   
           {/* GRID VISI MISI */}
