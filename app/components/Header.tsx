@@ -46,19 +46,19 @@ export default function Header() {
       {open && (
         <div className="md:hidden bg-white border-t">
           <nav className="flex flex-col px-6 py-4 gap-4 text-gray-700">
-            <Link href="#beranda" onClick={() => setOpen(false)}>
+            <Link href="." onClick={() => setOpen(false)}>
               Beranda
             </Link>
-            <Link href="#profil" onClick={() => setOpen(false)}>
+            <Link href="profil" onClick={() => setOpen(false)}>
               Profil
             </Link>
-            <Link href="#inovasi" onClick={() => setOpen(false)}>
-              Inovasi
-            </Link>
-            <Link href="#kontak" onClick={() => setOpen(false)}>
-              Kontak
-            </Link>
-          </nav>
+            <Link href="layananpublik" className="hover:text-blue-600">
+            Informasi Publik
+          </Link>
+          <Link href="kontak" className="hover:text-blue-600">
+            Kontak
+          </Link>
+        </nav>
         </div>
       )}
     </header>
