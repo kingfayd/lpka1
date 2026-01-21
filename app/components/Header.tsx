@@ -20,9 +20,10 @@ export default function Header() {
     height={40}
     priority
   />
-  <span className="hidden sm:block font-semibold text-gray-700 group-hover:text-blue-600 transition-colors">
-    LPKA Kelas I Tangerang
-  </span>
+  <span className="font-semibold text-gray-700 group-hover:text-blue-600 transition-colors text-sm sm:text-base">
+  LPKA Kelas I Tangerang
+</span>
+
 </Link>
 
 
