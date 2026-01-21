@@ -9,10 +9,10 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4 relative flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between relative">
         
-        {/* LEFT - LOGO + TITLE (DESKTOP) */}
-        <Link href="/" className="hidden md:flex items-center gap-2">
+        {/* LEFT - LOGO */}
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/lpka3.png"
             alt="Logo LPKA Kelas I Tangerang"
@@ -20,17 +20,22 @@ export default function Header() {
             height={40}
             priority
           />
-          <span className="font-semibold text-gray-700 hover:text-blue-600 transition-colors">
-            LPKA Kelas I Tangerang
-          </span>
         </Link>
 
-        {/* CENTER - TITLE (MOBILE ONLY) */}
+        {/* TITLE - CENTER (MOBILE ONLY, FULL TEXT) */}
         <Link
           href="/"
-          className="md:hidden absolute left-1/2 -translate-x-1/2 font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+          className="md:hidden absolute left-1/2 -translate-x-1/2 font-semibold text-gray-700 hover:text-blue-600 transition-colors text-sm"
         >
-          LPKA
+          LPKA Kelas I Tangerang
+        </Link>
+
+        {/* DESKTOP TITLE (NORMAL, SEBELAH LOGO) */}
+        <Link
+          href="/"
+          className="hidden md:block ml-3 font-semibold text-gray-700 hover:text-blue-600 transition-colors"
+        >
+          LPKA Kelas I Tangerang
         </Link>
 
         {/* RIGHT - MENU / BUTTON */}
