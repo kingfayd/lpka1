@@ -9,50 +9,59 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 relative flex items-center justify-between">
         
-        {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2 group">
-  <Image
-    src="/images/lpka3.png"
-    alt="Logo LPKA Kelas 1 Tangerang"
-    width={40}
-    height={40}
-    priority
-  />
-  <span className="font-semibold text-gray-700 group-hover:text-blue-600 transition-colors text-sm sm:text-base">
-  LPKA Kelas I Tangerang
-</span>
+        {/* LEFT - LOGO + TITLE (DESKTOP) */}
+        <Link href="/" className="hidden md:flex items-center gap-2">
+          <Image
+            src="/images/lpka3.png"
+            alt="Logo LPKA Kelas I Tangerang"
+            width={40}
+            height={40}
+            priority
+          />
+          <span className="font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+            LPKA Kelas I Tangerang
+          </span>
+        </Link>
 
-</Link>
-
-
-        {/* DESKTOP MENU */}
-        <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-700">
-          <Link href="/" className="hover:text-blue-600">
-            Beranda
-          </Link>
-          <Link href="/profil" className="hover:text-blue-600">
-            Profil
-          </Link>
-          <Link href="/layananpublik" className="hover:text-blue-600">
-            Informasi Publik
-          </Link>
-          <Link href="/kontak" className="hover:text-blue-600">
-            Kontak
-          </Link>
-        </nav>
-
-        {/* MOBILE BUTTON */}
-        <button
-          onClick={() => setOpen(!open)}
-          className="md:hidden flex flex-col gap-1"
-          aria-label="Toggle menu"
+        {/* CENTER - TITLE (MOBILE ONLY) */}
+        <Link
+          href="/"
+          className="md:hidden absolute left-1/2 -translate-x-1/2 font-semibold text-gray-700 hover:text-blue-600 transition-colors"
         >
-          <span className="w-6 h-0.5 bg-gray-700" />
-          <span className="w-6 h-0.5 bg-gray-700" />
-          <span className="w-6 h-0.5 bg-gray-700" />
-        </button>
+          LPKA
+        </Link>
+
+        {/* RIGHT - MENU / BUTTON */}
+        <div className="flex items-center gap-6">
+          {/* DESKTOP MENU */}
+          <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-700">
+            <Link href="/" className="hover:text-blue-600">
+              Beranda
+            </Link>
+            <Link href="/profil" className="hover:text-blue-600">
+              Profil
+            </Link>
+            <Link href="/layananpublik" className="hover:text-blue-600">
+              Informasi Publik
+            </Link>
+            <Link href="/kontak" className="hover:text-blue-600">
+              Kontak
+            </Link>
+          </nav>
+
+          {/* MOBILE BUTTON */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden flex flex-col gap-1"
+            aria-label="Toggle menu"
+          >
+            <span className="w-6 h-0.5 bg-gray-700" />
+            <span className="w-6 h-0.5 bg-gray-700" />
+            <span className="w-6 h-0.5 bg-gray-700" />
+          </button>
+        </div>
       </div>
 
       {/* MOBILE MENU */}
