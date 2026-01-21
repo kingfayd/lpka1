@@ -12,28 +12,21 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* LOGO + TITLE */}
-<Link href="/" className="flex items-center gap-2 relative">
-  <Image
-    src="/images/lpka3.png"
-    alt="Logo LPKA Kelas I Tangerang"
-    width={40}
-    height={40}
-    priority
-  />
-
-  <span
-    className="
-      font-semibold text-gray-700 hover:text-blue-600 transition-colors
-      md:static
-      md:translate-x-0
-      md:text-left
-      absolute left-1/2 -translate-x-1/2
-    "
-  >
-    LPKA Kelas I Tangerang
-  </span>
-</Link>
-
+        <Link
+          href="/"
+          className="flex items-center gap-2 w-full md:w-auto md:justify-start justify-center"
+        >
+          <Image
+            src="/images/lpka3.png"
+            alt="Logo LPKA Kelas I Tangerang"
+            width={40}
+            height={40}
+            priority
+          />
+          <span className="font-semibold text-gray-700 hover:text-blue-600 transition-colors">
+            LPKA Kelas I Tangerang
+          </span>
+        </Link>
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex gap-8 text-sm font-medium text-gray-700">
