@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ProfilSection from "../components/ProfilSection";
 
 export default function ProfilPage() {
@@ -7,7 +6,6 @@ export default function ProfilPage() {
     <main className="min-h-screen flex flex-col">
       <Header />
       <ProfilSection />
-      <Footer />
     </main>
   );
 }

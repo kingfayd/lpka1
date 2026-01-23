@@ -86,7 +86,8 @@ export default function HeroSection() {
       </svg>
 
       {/* HERO CONTENT */}
-      <div className="relative mx-auto h-4/5 flex justify-center items-center w-full px-4 py-16">
+      <div className="relative mx-auto h-full flex justify-center items-center w-full px-4 pt-28 pb-16">
+
         <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
           <div
             id="tagline"
